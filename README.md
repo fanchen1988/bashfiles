@@ -4,7 +4,7 @@
 
 ### Manually
 ```
-$ git clone git://github.com/agate/bashfiles.git ~/.bash
+$ git clone git@github.com:fanchen1988/bashfiles.git ~/.bash
 $ cd ~/.bash
 $ ./install.sh
 ```
