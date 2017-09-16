@@ -1,8 +1,12 @@
 alias less='less -r'
 
-alias ls='ls --color=always'
 alias l='ls -CF'
 alias ll='ls -lh'
 alias la='ls -A'
-alias lsa='ls -A'
+alias lsa='ls -lath'
 alias lsal='ls -AlFh'
+
+CDPATH="$HOME:$CDPATH"
+if [ -d "$HOME/code" ] ; then
+  CDPATH="$HOME/code:$CDPATH"
+fi
