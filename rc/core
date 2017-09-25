@@ -6,6 +6,8 @@ alias la='ls -A'
 alias lsa='ls -lath'
 alias lsal='ls -AlFh'
 
+alias wcl='wc -l'
+
 CDPATH="$HOME:$CDPATH"
 if [ -d "$HOME/code" ] ; then
   CDPATH="$HOME/code:$CDPATH"
