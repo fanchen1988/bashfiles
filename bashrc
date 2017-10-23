@@ -54,6 +54,9 @@ bind "Control-j: menu-complete"
 bind "Control-k: menu-complete-backward"
 bind "set completion-map-case on"
 
+if command -v autojump >/dev/null 2>&1; then
+  source $(greadlink -f $(dirname $(greadlink -f $(which autojump)))/../share/autojump/autojump.bash)
+fi
 
 # Welcome
 ruby -e "puts %{It takes #{format('%.3f',Time.now.to_f - $START_AT)} second(s) to launch this shell env my Lord!}"
