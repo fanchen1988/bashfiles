@@ -10,5 +10,5 @@ alias wcl='wc -l'
 
 CDPATH="$HOME:$CDPATH"
 if [ -d "$HOME/code" ] ; then
-  CDPATH="$HOME/code:$CDPATH"
+  CDPATH="$CDPATH:$HOME/code"
 fi
